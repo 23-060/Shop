@@ -1,0 +1,144 @@
+/* Gaya dasar */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #ffffff98;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+header h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+header input {
+    width: 500px;
+    border: 2px solid #fda085;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+}
+header h1 i, footer a i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+header h1 i:hover, footer a i:hover {
+    color: #fda085;
+    transform: scale(1.2);
+}
+
+
+/* Navigasi */
+nav {
+    background-color: #ffffffa4;
+    padding: 0px;
+    margin-top: -10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #fda085;
+    text-decoration: underline;
+}
+
+
+/* Konten Utama */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    color: #ff6b6b;
+    border-bottom: 2px solid #4ecdc4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    color: #333;
+}
+footer a {
+    color: #fda085;
+    margin: 0 10px;
+}
+footer a:hover {
+    color: #333;
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+    header input {
+        width: 250px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
